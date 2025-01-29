@@ -1,3 +1,36 @@
+"""
+Este script realiza la interpolación de datos de velocidad NMO 2D a un área 3D dada y visualiza los resultados en 3D.
+El flujo del script es el siguiente:
+1. Solicita al usuario los parámetros de entrada, incluyendo nombres de archivos, resoluciones y coordenadas.
+2. Abre el archivo SEGY y extrae las coordenadas X e Y.
+3. Lee el archivo de velocidades y combina los datos con las coordenadas del SEGY en un único DataFrame.
+4. Guarda el archivo combinado.
+5. Realiza la interpolación de los datos usando el método de vecinos más cercanos en 3D.
+6. Guarda los datos interpolados en un archivo de texto de salida.
+7. Grafica los resultados interpolados en 3D.
+Librerías utilizadas:
+- segyio: Para manipulación de archivos SEGY.
+- pandas: Para manipulación de datos en DataFrames.
+- numpy: Para operaciones numéricas y creación de mallas.
+- scipy.interpolate: Para interpolación de datos.
+- matplotlib.pyplot: Para visualización de datos.
+- mpl_toolkits.mplot3d: Para gráficos 3D.
+- os: Para operaciones del sistema de archivos.
+- tqdm: Para mostrar una barra de progreso durante la interpolación.
+- matplotlib.ticker: Para formatear los ticks en los ejes del gráfico.
+Entradas:
+- Nombre del archivo SEGY.
+- Nombre del archivo de velocidades.
+- Resolución de la malla en X-Y (m).
+- Resolución de la malla en TWT (ms).
+- Coordenadas mínimas y máximas en X e Y (m).
+- TWT inicio y final (ms).
+Salidas:
+- Archivo combinado con las coordenadas y velocidades.
+- Archivo interpolado con los datos interpolados.
+- Gráfico 3D de los resultados interpolados.
+"""
+
 import segyio
 import pandas as pd
 import numpy as np
