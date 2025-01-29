@@ -13,3 +13,8 @@ Ese archivo lo extrapola mediante NearestNDInterpolator a todo el espacio defini
 La salida es un archivo de texto (Trace, X, Y, TWT, VNMO)
 
 También se grafica la salida en 3D.
+
+
+Desarrollado para el Trabajo de Fin de Máster:
+Pertuz Domínguez, A. (2024). Recuperación y procesamiento de secciones de sísmica de reflexión 2D antiguas: el ejemplo del yacimiento de gas Viura (La Rioja, España). 
+https://docta.ucm.es/entities/publication/5166e5c0-4184-43ce-9cc0-78ee3da0adf8
